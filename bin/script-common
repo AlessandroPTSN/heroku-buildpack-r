@@ -34,23 +34,23 @@ export_env_dir() {
 }
 
 build_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-chroot.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${4.0.3}-chroot.tar.gz"
 }
 
 deploy_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-deploy.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${4.0.3}-deploy.tar.gz"
 }
 
 shiny_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-shiny.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${4.0.3}-shiny.tar.gz"
 }
 
 plumber_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-plumber.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${4.0.3}-plumber.tar.gz"
 }
 
 function s3_url() {
-  echo "https://${BUILDPACK_NAME}.s3.amazonaws.com/${BUILDPACK_VERSION}/${1}"
+  echo "https://${BUILDPACK_NAME}.s3.amazonaws.com/latest/heroku-buildpack-r-20-4.0.3-deploy.tar.gz"
 }
 
 cache_filename_for() {
