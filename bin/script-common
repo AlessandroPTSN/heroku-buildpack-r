@@ -38,15 +38,15 @@ build_archive() {
 }
 
 deploy_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-deploy.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-r-20-4.0.3-deploy.tar.gz"
 }
 
 shiny_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-shiny.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-r-20-4.0.3-shiny.tar.gz"
 }
 
 plumber_archive() {
-  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-${R_VERSION}-plumber.tar.gz"
+  echo "${BUILDPACK_NAME}-${HEROKU_STACK}-r-20-4.0.3-plumber.tar.gz"
 }
 
 function s3_url() {
